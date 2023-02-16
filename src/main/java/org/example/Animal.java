@@ -3,17 +3,26 @@ package org.example;
 public class Animal {
 
     String nombre;
+
     String genero;
     double peso=1;
-    Animal pareja;
+     Animal pareja;
 
+    public Animal() {
+    }
 
     public Animal(String nombre, double peso) {
         this.nombre = nombre;
         this.peso = peso;
     }
+    public Animal(String nombre, String genero, double peso, Animal pareja) {
+        this.nombre = nombre;
+        this.genero = genero;
+        this.peso = peso;
+        this.pareja = pareja;
+    }
 
-    void encontrarPareja(Animal pareja){
+   public void encontrarPareja(Animal pareja){
         this.pareja=pareja;
     }
 
